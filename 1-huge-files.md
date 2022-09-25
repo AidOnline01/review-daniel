@@ -9,7 +9,7 @@ There is a violation of Single Responsibility principle, which creates huge file
 
   [EditEventScreen](https://github.com/tamotam-com/tamotam-app/blob/master/screens/EditEventScreen.tsx)
 
-  ```
+  ```javascript
   import * as Location from "expo-location";
 import analytics from "@react-native-firebase/analytics";
 import crashlytics from "@react-native-firebase/crashlytics";
@@ -523,7 +523,7 @@ const styles = StyleSheet.create({
 <details>
   <summary>How it could have been done?</summary>
 
-  ```
+  ```javascript
   import analytics from "@react-native-firebase/analytics";
 import React, {
   useCallback,
